@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body>
+    <h1>폼</h1>
+    <p>폼(양식)? 검색 창, 로그인 창, 회원가입 페이지, 게시판 페이지</p>
+
+    <!-- 
+        <form>: 폼의 요소를 담기위한 컨테이너
+        <fieldset>: 폼의 그룹핑
+        <legend>: fieldset의 캡션
+        <input type="">: 한 줄 입력 폼
+            type: text, password, search, tel, email, url
+            type: submit, reset, button, image, file
+        <label>: 레이블
+        <button type="">: 버튼
+            type: submit, reset, button
+        <textarea>: 여러 줄 입력
+        <select>: 선택 목록
+        <option>: 목록의 항목
+        <optgroup>: 목록의 항목을 그룹핑
+        <datalist>: 선택 목록 + 입력
+     -->
+
+    <!-- 서버 프로그래밍언어: php, jsp, asp -->
+    <!-- 자동 완성 기능:  autocomplete="on" -->
+    <form action="action_page.php" method="get">
+
+        <fieldset>
+            <legend>검색 창</legend>
+            <!-- 검색 입력 상자 -->
+            구글 검색:
+            <input type="search">
+            
+            <!-- 검색 버튼 -->
+            <!-- value는 버튼의 이름이고 input은 종료태그가 없음 -->
+            <input type="submit" value="검색">
+            <button type="submit">검색</button>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>로그인</legend>
+
+            <!-- 아이디 -->
+            아이디:
+            <input type="text">
+            <!-- 패스워드 -->
+            패스워드:
+            <input type="password">
+
+            <!-- 로그인 버튼 -->
+            <input type="submit" value="로그인">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>회원 가입</legend>
+            
+            <!-- 이용 약관 -->
+            <div>
+                <!-- 체크박스 -->
+                ooo 이용약관 동의(필수)
+            </div>
+
+            <div>
+                <!-- 글상자 -->
+                여러분을 환영합니다. ooo 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 -중략-
+            </div>
+
+            <div>
+                <!-- text 입력 상자 -->
+                생년월일
+                <!-- 목록 상자 -->
+                월
+                <!-- text 입력 상자 -->
+            </div>
+
+            <div>
+                <!-- 이메일 -->
+                본인 확인 이메일<span>(선택)</span>
+            </div>
+
+            <div>
+                <!-- 전화번호 -->
+                휴대전화
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
